@@ -14,11 +14,16 @@ public class SchoolSchedule {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        int x = subject / 2; // количество перемен после нечетных уроков
-        int y = subject - x - 1; // количество перемен после четных уроков
-        int minutes = (subject * 45) + (x * 5) + (y * 15);
-        int hours = minutes / 60 + 9;
-        minutes = minutes % 60;
-        System.out.println("Time of the end: " + hours + " " + minutes);
+        if (subject > 0 && subject < 11) {
+            int x = subject / 2; // количество перемен после нечетных уроков
+            int y = subject - x - 1; // количество перемен после четных уроков
+            int minutes = (subject * 45) + (x * 5) + (y * 15);
+            int hours = minutes / 60 + 9;
+            minutes = minutes % 60;
+            System.out.println("Time of the end: " + hours + " " + minutes);
+        } else {
+            System.out.println("Please, enter the number from 1 to 10");
+        }
+
     }
 }
