@@ -20,7 +20,25 @@ public class Main {
                     System.out.println("Exiting...");
                 } break;
                 case 1 : {
-
+                    String message = "";
+                    String rev = "";
+                    System.out.println("Please, enter the string");
+                    try {
+                        message = bufferedReader.readLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Reverse all? (Y / N)");
+                    try {
+                        rev = bufferedReader.readLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    if (rev.equals("Y")) {
+                        System.out.println("Result: " + ReverseLib.reverse(message, true));
+                    } else {
+                        System.out.println("Result: " + ReverseLib.reverse(message, false));
+                    }
                 } break;
                 case 2 : {
 
