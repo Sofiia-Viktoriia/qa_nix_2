@@ -41,7 +41,21 @@ public class Main {
                     }
                 } break;
                 case 2 : {
-
+                    String message = "";
+                    String dest = "";
+                    System.out.println("Please, enter the string");
+                    try {
+                        message = bufferedReader.readLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Please, enter the substring");
+                    try {
+                        dest = bufferedReader.readLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Result: " + ReverseLib.reverse(message, dest));
                 } break;
                 case 3 : {
 

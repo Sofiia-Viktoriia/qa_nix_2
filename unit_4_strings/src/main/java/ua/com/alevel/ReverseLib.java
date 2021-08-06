@@ -18,4 +18,18 @@ public class ReverseLib {
         }
         return result;
     }
+
+    public static String reverse(String src, String dest) {
+        String result;
+        int indexStart = src.indexOf(dest);
+        if (indexStart != -1) {
+            String subResult = reverse(dest, true);
+            result = src.substring(0, indexStart);
+            result = result.concat(subResult);
+            result = result.concat(src.substring(indexStart + dest.length()));
+            return result;
+        } else {
+            throw new IllegalArgumentException(dest + " is not a substring of " + src);
+        }
+    }
 }
