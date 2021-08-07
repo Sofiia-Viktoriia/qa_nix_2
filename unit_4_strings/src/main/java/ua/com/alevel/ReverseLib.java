@@ -32,4 +32,17 @@ public class ReverseLib {
             throw new IllegalArgumentException(dest + " is not a substring of " + src);
         }
     }
+
+    public static String reverse(String src, int firstIndex, int lastIndex) {
+        if (lastIndex < firstIndex || lastIndex > src.length()) {
+            throw new IllegalArgumentException("Wrong indexes");
+        } else {
+            String substr = src.substring(firstIndex, lastIndex + 1);
+            substr = reverse(substr, false);
+            String result = src.substring(0, firstIndex);
+            result = result.concat(substr);
+            result = result.concat(src.substring(lastIndex + 1));
+            return result;
+        }
+    }
 }

@@ -58,7 +58,28 @@ public class Main {
                     System.out.println("Result: " + ReverseLib.reverse(message, dest));
                 } break;
                 case 3 : {
-
+                    String message = "";
+                    int firstIndex = 0;
+                    int lastIndex = 0;
+                    System.out.println("Please, enter the string");
+                    try {
+                        message = bufferedReader.readLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Please, enter the first index");
+                    try {
+                        firstIndex = Integer.parseInt(bufferedReader.readLine());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Please, enter the last index");
+                    try {
+                        lastIndex = Integer.parseInt(bufferedReader.readLine());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Result: " + ReverseLib.reverse(message, firstIndex, lastIndex));
                 } break;
                 default : {
                     System.out.println("Please, choose the option from the menu.");
