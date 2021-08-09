@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class AmountOfLetters {
+
     public void run() {
         System.out.println("\nPlease, enter the string");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -37,8 +38,8 @@ public class AmountOfLetters {
         }
         int counter = 1;
         for (int i = 0; i < alphabetBig.length; i++) {
-            if(alphabetBig[i] > 0) {
-                System.out.println(counter + ". " + (char)(i + 65) + " - " + alphabetBig[i]);
+            if (alphabetBig[i] > 0) {
+                System.out.println(counter + ". " + (char) (i + 65) + " - " + alphabetBig[i]);
                 counter++;
             }
         }

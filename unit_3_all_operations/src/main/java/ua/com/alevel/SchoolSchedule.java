@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class SchoolSchedule {
+
     public void run() {
         int subject = 0;
         System.out.println("Please, enter the number of subject");

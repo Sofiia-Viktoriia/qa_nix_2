@@ -1,6 +1,7 @@
 package ua.com.alevel;
 
 public class ReverseLib {
+
     public static String reverse(String src, boolean reverseAll) {
         String result = "";
         if (reverseAll) {

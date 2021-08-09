@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class SumOfNumbers {
+
     public void run() {
         System.out.println("\nPlease, enter the string");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

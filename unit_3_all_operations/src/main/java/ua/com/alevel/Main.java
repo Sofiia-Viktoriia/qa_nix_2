@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
+
     public static void main(String[] args) {
         int choice = 1;
         while (choice != 0) {
@@ -16,19 +17,23 @@ public class Main {
                 e.printStackTrace();
             }
             switch (choice) {
-                case 0 : {
+                case 0: {
                     System.out.println("Exiting...");
-                } break;
-                case 1 : {
+                }
+                break;
+                case 1: {
                     new SumOfNumbers().run();
-                } break;
-                case 2 : {
+                }
+                break;
+                case 2: {
                     new AmountOfLetters().run();
-                } break;
-                case 3 : {
+                }
+                break;
+                case 3: {
                     new SchoolSchedule().run();
-                } break;
-                default : {
+                }
+                break;
+                default: {
                     System.out.println("Please, choose the option from the menu.");
                 }
             }

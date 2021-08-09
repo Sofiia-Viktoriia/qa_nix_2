@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
+
     public static void main(String[] args) {
         int choice = 1;
         while (choice != 0) {
@@ -16,10 +17,11 @@ public class Main {
                 e.printStackTrace();
             }
             switch (choice) {
-                case 0 : {
+                case 0: {
                     System.out.println("Exiting...");
-                } break;
-                case 1 : {
+                }
+                break;
+                case 1: {
                     String message = "";
                     String rev = "";
                     System.out.println("Please, enter the string");
@@ -39,8 +41,9 @@ public class Main {
                     } else {
                         System.out.println("Result: " + ReverseLib.reverse(message, false));
                     }
-                } break;
-                case 2 : {
+                }
+                break;
+                case 2: {
                     String message = "";
                     String dest = "";
                     System.out.println("Please, enter the string");
@@ -56,8 +59,9 @@ public class Main {
                         e.printStackTrace();
                     }
                     System.out.println("Result: " + ReverseLib.reverse(message, dest));
-                } break;
-                case 3 : {
+                }
+                break;
+                case 3: {
                     String message = "";
                     int firstIndex = 0;
                     int lastIndex = 0;
@@ -80,8 +84,9 @@ public class Main {
                         e.printStackTrace();
                     }
                     System.out.println("Result: " + ReverseLib.reverse(message, firstIndex, lastIndex));
-                } break;
-                default : {
+                }
+                break;
+                default: {
                     System.out.println("Please, choose the option from the menu.");
                 }
             }
