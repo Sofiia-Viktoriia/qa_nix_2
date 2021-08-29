@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Uranus extends Sphere {
 
-    private final BigDecimal weight = new BigDecimal("8.68E25");
-    private final BigDecimal radius = new BigDecimal("2.53E7");
+    private final BigDecimal weight = new BigDecimal(8.68E25);
+    private final BigDecimal radius = new BigDecimal(2.53E7);
 
     public BigDecimal getWeight() {
         return weight;

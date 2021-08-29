@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class PlanetImpl implements Planet {
 
-    private final BigDecimal gConstant = new BigDecimal("6.67E-11");
+    private final BigDecimal gConstant = new BigDecimal(6.67E-11);
 
     @Override
     public BigDecimal accelerationOfGravity(BigDecimal weight, BigDecimal radius) {

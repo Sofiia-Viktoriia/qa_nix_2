@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Jupiter extends Sphere {
 
-    private final BigDecimal weight = new BigDecimal("1.89E27");
-    private final BigDecimal radius = new BigDecimal("6.99E7");
+    private final BigDecimal weight = new BigDecimal(1.89E27);
+    private final BigDecimal radius = new BigDecimal(6.99E7);
 
     public BigDecimal getWeight() {
         return weight;

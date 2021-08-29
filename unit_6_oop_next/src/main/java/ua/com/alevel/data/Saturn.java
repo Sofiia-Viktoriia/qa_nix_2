@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Saturn extends Sphere {
 
-    private final BigDecimal weight = new BigDecimal("5.68E26");
-    private final BigDecimal radius = new BigDecimal("5.73E7");
+    private final BigDecimal weight = new BigDecimal(5.68E26);
+    private final BigDecimal radius = new BigDecimal(5.73E7);
 
     public BigDecimal getWeight() {
         return weight;

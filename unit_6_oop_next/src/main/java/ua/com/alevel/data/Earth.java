@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Earth extends Sphere {
 
-    private final BigDecimal weight = new BigDecimal("5.97E24");
-    private final BigDecimal radius = new BigDecimal("6.37E6");
+    private final BigDecimal weight = new BigDecimal(5.97E24);
+    private final BigDecimal radius = new BigDecimal(6.37E6);
 
     public BigDecimal getWeight() {
         return weight;

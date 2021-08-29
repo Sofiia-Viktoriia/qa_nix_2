@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Mars extends Sphere {
 
-    private final BigDecimal weight = new BigDecimal("6.41E23");
-    private final BigDecimal radius = new BigDecimal("3.39E6");
+    private final BigDecimal weight = new BigDecimal(6.41E23);
+    private final BigDecimal radius = new BigDecimal(3.39E6);
 
     public BigDecimal getWeight() {
         return weight;

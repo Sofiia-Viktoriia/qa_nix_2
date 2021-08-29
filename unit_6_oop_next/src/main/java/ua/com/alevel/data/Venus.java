@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Venus extends Sphere {
 
-    private final BigDecimal weight = new BigDecimal("4.87E24");
-    private final BigDecimal radius = new BigDecimal("6.05E6");
+    private final BigDecimal weight = new BigDecimal(4.87E24);
+    private final BigDecimal radius = new BigDecimal(6.05E6);
 
     public BigDecimal getWeight() {
         return weight;
