@@ -1,0 +1,15 @@
+input.txt contains following words:
+ewkf - 3
+qoq - 3
+weoi - 2
+qooooq - 1
+wj - 1
+chej - 1
+dlejnew - 1
+whgd - 1
+
+input.txt contains following palindromes:
+qoq - 3
+qooooq - 1
+
+The amount of sentences in input.txt is 2
